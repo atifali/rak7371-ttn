@@ -1,0 +1,17 @@
+version: '2.0'
+
+services:
+
+  basicstation:
+    image: xoseperez/basicstation:latest
+    container_name: basicstation
+    restart: unless-stopped
+    privileged: true
+    network_mode: host      # required to read main interface MAC instead of virtual one
+    environment:
+      MODEL: "RAK7371"
+      INTERFACE: "USB"
+      DEVICE: "/dev/ttyACM0"
+      TC_KEY: "NNSXS.E6JEKX4FHKLP734IX52FHH745PDRXWEVNUVUGCY.Q3OEL4F7U3H45IKQIV5LWBD2K2BENI3ZAX7IB3ECIMGHET56RT3U"  # Copy here your API key from the LNS
+      GATEWAY_EUI: "0016C001FF194RT5" # Replace this with your own gateway EUI
+      TTN_REGION: "nam1"
