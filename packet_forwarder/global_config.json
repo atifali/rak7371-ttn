@@ -74,7 +74,7 @@
     },
 
     "gateway_conf": {
-        "gateway_ID": "0016C001FF194RT5" // ofcourse this is just a dummy EUI - replace this with your own,
+        "gateway_ID": "0016C001FF194RT5", // ofcourse this is just a dummy EUI - replace this with your own
         /* change with default server address/ports */
         "server_address": "nam1.cloud.thethings.network",
         "serv_port_up": 1700,
